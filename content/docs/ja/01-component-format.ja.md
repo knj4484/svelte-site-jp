@@ -85,7 +85,7 @@ development モード（[コンパイラオプション](docs#svelte_compile)を
 </script>
 ```
 
-##### 2. 代入は'リアクティブ'
+##### [2. 代入は'リアクティブ'](2_Assignments_are_reactive)
 
 ---
 
@@ -107,7 +107,7 @@ Svelteのリアクティビティは代入に基づいているため、`.push()
 </script>
 ```
 
-##### 3. `$:` はステートメントがリアクティブであることを示す
+##### [3. `$:` はステートメントがリアクティブであることを示す](3_$_marks_a_statement_as_reactive)
 
 ---
 
@@ -169,7 +169,7 @@ Total: {total}
 </script>
 ```
 
-##### 4. ストアに`$`接頭辞を付けて値にアクセスする
+##### [4. ストアに`$`接頭辞を付けて値にアクセスする](4_Prefix_stores_with_$_to_access_their_values)
 
 ---
 
@@ -198,7 +198,8 @@ Total: {total}
 </script>
 ```
 
-##### ストアコントラクト(Store contract)
+##### [ストアコントラクト(Store contract)](Store_contract)
+##### Store contract
 
 ```js
 store = { subscribe: (subscription: (value: any) => void) => (() => void), set?: (value: any) => void }
